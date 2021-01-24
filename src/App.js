@@ -1,18 +1,22 @@
-import Layout from "./hoc/Layout/Layout";
+import React from "react";
+import Layout from "./Containers/Layout/Layout";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Aux from "./hoc/Aux/Aux";
+
+//Pages 
+import HomePage from './Components/Pages/HomePage/HomePage';
 
 function App() {
   return (
-    <div>
+    <Aux>
       <Layout>
-        <h1>Building Website Portfolio</h1>
-
-        {/* NavBar */}
-
-        {/* Main Feed */}
-
-        {/* Blog Posts Feed */}
+        <Router>
+          <Switch>
+            <Route path="/" exact component={HomePage} />
+          </Switch>
+        </Router>
       </Layout>
-    </div>
+    </Aux>
   );
 }
 

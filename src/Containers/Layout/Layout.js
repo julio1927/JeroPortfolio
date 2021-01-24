@@ -1,14 +1,21 @@
 import React, { Component } from "react";
-import Aux from "../Aux/Aux";
+import Aux from "../../hoc/Aux/Aux";
 import classes from "./Layout.module.css";
-import NavBar from "../../Components/Navigation/NavBar/NavBar";
+import NavigationBar from "../../Components/Navigation/NavigationBar/NavigationBar";
 
 class Layout extends Component {
   render() {
     return (
       <Aux>
-        <NavBar />
+        {/* NavBar */}
+        <NavigationBar />
+
+        {/* Main Feed */}
         <main className={classes.Content}>{this.props.children}</main>
+
+        {/* Blog Posts Feed */}
+
+        {/* Footer */}
       </Aux>
     );
   }
