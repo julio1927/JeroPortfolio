@@ -1,0 +1,15 @@
+.BtnStyle {
+    background-color: transparent;
+    color: #fff;
+    padding: 8px 26px;
+    border: 1px solid #393e46;
+    transition: all 0.3s ease-out;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.BtnStyle:hover {
+    background: #fff;
+    color: #242424;
+    transition: all 0.3s ease-out;
+}

@@ -1,3 +1,12 @@
 .NavBar {
     background-color: #222831;
 }
+
+.SocialMedia {
+    align-items: center;
+    cursor: pointer;
+}
+
+.NavBar > .MuiSvgIcon-root {
+    padding: 20px;
+}
