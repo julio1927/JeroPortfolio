@@ -5,7 +5,8 @@ import ReactTypingEffect from "react-typing-effect";
 function Background() {
   return (
     <div className={classes.BackgroundContainer}>
-      <h1>Hello, my name is Julio Rivas</h1>
+      <h3>Hello, my name is</h3>
+      <h1>Julio Rivas.</h1>
       <ReactTypingEffect
         className={classes.TypingEffect}
         staticText="I'm a"
