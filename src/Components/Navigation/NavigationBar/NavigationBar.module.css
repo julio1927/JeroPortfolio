@@ -6,7 +6,3 @@
     align-items: center;
     cursor: pointer;
 }
-
-.NavBar > .MuiSvgIcon-root {
-    padding: 20px;
-}

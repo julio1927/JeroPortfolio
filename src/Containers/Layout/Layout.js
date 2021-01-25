@@ -13,8 +13,6 @@ class Layout extends Component {
         {/* Main Feed */}
         <main className={classes.Content}>{this.props.children}</main>
 
-        {/* Blog Posts Feed */}
-
         {/* Footer */}
       </Aux>
     );

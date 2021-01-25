@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Nav, Navbar } from "react-bootstrap";
+import { scroller } from "react-scroll";
 import classes from "./NavigationBar.module.css";
 import Button from "../../UI/Button/Button";
 
@@ -31,22 +32,62 @@ function NavigationBar() {
           <Nav className="ml-auto">
             {/* NavBar Home*/}
             <Nav.Item>
-              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link
+                onClick={() =>
+                  scroller.scrollTo("HomePage", {
+                    smooth: true,
+                    offset: -70,
+                    duration: 1000,
+                  })
+                }
+              >
+                Home
+              </Nav.Link>
             </Nav.Item>
 
             {/* NavBar About Me*/}
             <Nav.Item>
-              <Nav.Link href="/AboutMe">About Me</Nav.Link>
+              <Nav.Link
+                onClick={() =>
+                  scroller.scrollTo("AboutPage", {
+                    smooth: true,
+                    offset: -70,
+                    duration: 1000,
+                  })
+                }
+              >
+                About Me
+              </Nav.Link>
             </Nav.Item>
 
             {/* NavBar Projects*/}
             <Nav.Item>
-              <Nav.Link href="/Projects">Projects</Nav.Link>
+              <Nav.Link
+                onClick={() =>
+                  scroller.scrollTo("ProjectsPage", {
+                    smooth: true,
+                    offset: -70,
+                    duration: 1000,
+                  })
+                }
+              >
+                Projects
+              </Nav.Link>
             </Nav.Item>
 
             {/* NavBar Resume*/}
             <Nav.Item>
-              <Nav.Link href="/Resume">Resume</Nav.Link>
+              <Nav.Link
+                onClick={() =>
+                  scroller.scrollTo("ResumePage", {
+                    smooth: true,
+                    offset: -70,
+                    duration: 1000,
+                  })
+                }
+              >
+                Resume
+              </Nav.Link>
             </Nav.Item>
 
             {/* Button -> Github */}
@@ -70,7 +111,7 @@ function NavigationBar() {
             )}
 
             {/* NavBar option Profile*/}
-            <i className="fas fa-user-circle"/>
+            <i className="fas fa-user-circle" />
           </Nav>
         </Navbar.Collapse>
       </Navbar>

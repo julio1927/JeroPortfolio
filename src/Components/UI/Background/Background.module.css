@@ -1,0 +1,12 @@
+.BackgroundContainer {
+  background: url("../../../Assets/Images/SeoulBG.jpg") center center/cover
+    no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 0 100px rgba(0,0,0,0.2);
+    object-fit: contain;
+    
+}

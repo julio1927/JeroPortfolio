@@ -2,7 +2,7 @@ import React from 'react'
 
 function ResumePage() {
     return (
-        <div>
+        <div id="ResumePage">
             RESUME PAGE
         </div>
     )
