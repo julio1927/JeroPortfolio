@@ -6,7 +6,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: inset 0 0 0 100px rgba(0,0,0,0.2);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
     object-fit: contain;
-    
+}
+
+.BackgroundContainer > h1 {
+  color: white;
+  font-size: 80px;
+  margin-top: 100px;
+}
+
+.BackgroundContainer > p {
+  color: white;
+  font-size: 32px;
+  margin-top: 8px;
+}
+
+.TypingEffect {
+  color: white;
+  font-size: 25px;
+  margin-top: 0px;
 }
