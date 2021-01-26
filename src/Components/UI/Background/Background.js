@@ -17,7 +17,7 @@ function Background() {
         ]}
         speed="100"
         typingDelay="500"
-        eraseDelay="1000"
+        eraseDelay="700"
       />
     </div>
   );

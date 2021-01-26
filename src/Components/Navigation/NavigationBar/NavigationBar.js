@@ -111,7 +111,7 @@ function NavigationBar() {
             )}
 
             {/* NavBar option Profile*/}
-            <i className="fas fa-user-circle" />
+            {/* <i className="fas fa-user-circle" />*/}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
