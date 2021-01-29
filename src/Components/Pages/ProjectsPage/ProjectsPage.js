@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import Cards from '../../Cards/Cards';
 
 function ProjectsPage() {
 
   return (
     <div id="ProjectsPage">
-        Projects Page
+        <Cards />
     </div>
   );
 }
