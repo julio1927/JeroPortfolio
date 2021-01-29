@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Modal from "../../Modal/Modal";
+import { GlobalStyle } from '../../UI/GlobalStyle/GlobalStyle';
 
 import styled from "styled-components";
 
@@ -22,10 +23,19 @@ const Button = styled.button`
 `;
 
 function ProjectsPage() {
+
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+      setShowModal(prev => !prev);
+  }
+
   return (
     <div id="ProjectsPage">
       <Container>
-        <Button>View Project</Button>
+        <Button onClick={openModal}>View Project</Button>
+        <Modal showModal={showModal} setShowModal={setShowModal}/>
+        <GlobalStyle />
       </Container>
     </div>
   );
