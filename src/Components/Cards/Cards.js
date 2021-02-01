@@ -31,7 +31,7 @@ function Cards() {
               src={GrowthWatch}
               text="JWC Autonomous plant monitoring system"
               label="Desktop App"
-              href="https://www.icmkitchener.org"
+              href="https://github.com/julio1927/JWCCapStone"
               alt="GrowthWatch"
             />
 
@@ -39,7 +39,7 @@ function Cards() {
               src={JeroPortfolio}
               text="My Portfolio Website"
               label="Web App"
-              href="https://www.icmkitchener.org"
+              href="https://github.com/julio1927/JeroPortfolio"
               alt="JeroPortfolio"
             />
           </ul>

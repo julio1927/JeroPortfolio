@@ -1,6 +1,9 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import Image from 'react-bootstrap/Image';
 import classes from "../../UI/Card/Card.module.css";
+import ProfilePic from '../../../Assets/Images/profilePic.jpeg';
+import './AboutPage.module.css';
 
 function AboutPage() {
   const skills = [
@@ -10,6 +13,7 @@ function AboutPage() {
     "Node JS",
     "Shopify",
     "Firebase",
+    "Wix",
   ];
 
   return (
@@ -17,7 +21,7 @@ function AboutPage() {
       <Card className={classes.Card}>
         <Card.Body>
           <div className={classes.CardImg}>
-            <i className="fas fa-user-circle fa-9x" />
+            <Image src={ProfilePic} alt="Julio Rivas"  roundedCircle/>
           </div>
           <Card.Title className="text-center">About Me</Card.Title>
           <Card.Text>
