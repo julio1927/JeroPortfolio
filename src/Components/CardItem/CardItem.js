@@ -16,13 +16,6 @@ function CardItem(props) {
               <h5 className={classes.CardsItemText}>{props.text}</h5>
             </div>
           </figure>
-          <div className={classes.BtnContainer}>
-            <div className={classes.Btn}>
-              <a href="">
-                <span>View Code</span>
-              </a>
-            </div>
-          </div>
         </a>
       </li>
     </>

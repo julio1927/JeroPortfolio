@@ -94,37 +94,23 @@
     line-height: 24px;
 }
 
-.BtnContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh;
-    font-size: 24px;
-}
-
-.SpanContainer {
-    position: relative;
-    z-index: 3;
-}
-
 .Btn {
-    color: #222831;
-    cursor: pointer;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    color: #222831 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #fff;
+    padding: 20px;
+    border: 3px solid #222831 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
 }
 
-.Btn a::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    
+.Btn:hover {
+    color: #FFF !important;
+    background: #222831;
+    border-color: #222831 !important;
+    transition: all 0.4s ease 0s;
 }
-
 
 
 
