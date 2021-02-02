@@ -3,6 +3,7 @@ import AboutPage from '../AboutPage/AboutPage';
 import Background from '../../UI/Background/Background';
 import ProjectsPage from '../ProjectsPage/ProjectsPage';
 import ResumePage from '../ResumePage/ResumePage';
+import ContactPage from '../ContactPage/ContactPage';
 
 function HomePage() {
     return (
@@ -11,6 +12,7 @@ function HomePage() {
             <AboutPage />
             <ProjectsPage />
             <ResumePage />
+            <ContactPage />
         </div>
     )
 }

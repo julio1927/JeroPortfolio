@@ -3,6 +3,7 @@ import { Nav, Navbar } from "react-bootstrap";
 import { scroller } from "react-scroll";
 import classes from "./NavigationBar.module.css";
 import Button from "../../UI/Button/Button";
+import Logo from "../../../Assets/Images/Jero.png";
 
 function NavigationBar() {
   const [button, setButton] = useState(true);
@@ -25,7 +26,15 @@ function NavigationBar() {
     <div className={classes.NavBar}>
       <Navbar expand="lg" className="navbar-dark">
         {/* Name + Logo */}
-        <Navbar.Brand href="/">Jero</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <img
+            src={Logo}
+            alt="Logo"
+            className="d-inline-block align-top"
+            width="80"
+            height="80"
+          />
+        </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -90,6 +99,21 @@ function NavigationBar() {
               </Nav.Link>
             </Nav.Item>
 
+            {/* NavBar Contact*/}
+            <Nav.Item>
+              <Nav.Link
+                onClick={() =>
+                  scroller.scrollTo("ContactPage", {
+                    smooth: true,
+                    offset: -70,
+                    duration: 1000,
+                  })
+                }
+              >
+                Contact
+              </Nav.Link>
+            </Nav.Item>
+
             {/* Button -> Github */}
             {button && (
               <Button
@@ -109,9 +133,6 @@ function NavigationBar() {
                 <i className="fab fa-linkedin-in" />
               </Button>
             )}
-
-            {/* NavBar option Profile*/}
-            {/* <i className="fas fa-user-circle" />*/}
           </Nav>
         </Navbar.Collapse>
       </Navbar>

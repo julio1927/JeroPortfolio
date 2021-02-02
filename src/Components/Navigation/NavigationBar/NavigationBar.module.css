@@ -9,3 +9,8 @@
     align-items: center;
     cursor: pointer;
 }
+
+.Logo {
+    align-items: center;
+    justify-content: center;
+}
