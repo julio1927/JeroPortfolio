@@ -110,7 +110,7 @@ function Footer() {
                 <Link to="AboutPage" smooth={true} duration={1000}>About Me</Link>
               </div>
               <div className="footerLink">
-                <Link to="ContactPage" smooth={true} duration={1000}>Contact Me</Link>
+                <Link to="ResumePage" smooth={true} duration={1000}>Resume</Link>
               </div>
             </ul>
           </div>
