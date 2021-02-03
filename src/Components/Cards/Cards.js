@@ -14,7 +14,7 @@ function Cards() {
           <ul className={classes.CardsItems}>
             <CardItem
               src={ICMKitchener}
-              text="ICM Kitchener Church Website created with ReactJS"
+              title="ICM Kitchener Church Website created with ReactJS"
               label="Web app"
               href="https://www.icmkitchener.org"
               alt="ICM Kitchener Site"
@@ -29,7 +29,7 @@ function Cards() {
 
             <CardItem
               src={GrowthWatch}
-              text="JWC Autonomous plant monitoring system"
+              title="JWC Autonomous plant monitoring system"
               label="Desktop App"
               href="https://github.com/julio1927/JWCCapStone"
               alt="GrowthWatch"
@@ -37,7 +37,7 @@ function Cards() {
 
             <CardItem
               src={JeroPortfolio}
-              text="My Portfolio Website"
+              title="My Portfolio Website"
               label="Web App"
               href="https://github.com/julio1927/JeroPortfolio"
               alt="JeroPortfolio"
