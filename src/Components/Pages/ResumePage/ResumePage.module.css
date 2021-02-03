@@ -27,22 +27,8 @@
   margin-bottom: 24px;
 }
 
-@media screen and (max-width: 768px) {
-  .ResumeItem {
-    width: 80%;
+@media screen and (max-width: 600px) {
+  .ResumeContainer {
+    width: 50%;
   }
 }
-
-@media only screen and (min-width: 1024px) {
-  .ResumeItem {
-    width: 80%;
-  }
-}
-
-
-@media only screen and (min-width: 635px) {
-    .ResumeItem {
-      width: 80%;
-    }
-  }
-  

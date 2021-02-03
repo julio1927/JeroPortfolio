@@ -1,35 +1,49 @@
 .BackgroundContainer {
   background: url("../../../Assets/Images/SeoulBG.jpg") center center/cover
     no-repeat;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
-    object-fit: contain;
-    justify-content: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+  justify-content: center;
 }
 
 .BackgroundContainer > h1 {
   color: white;
-  font-size: 80px;
+  font-size: 15vh;
 }
 
 .BackgroundContainer > h3 {
   color: white;
-  font-size: 30px;
+  font-size: 5vh;
   margin-bottom: -5px;
 }
 
-.BackgroundContainer > p {
-  color: white;
-  font-size: 32px;
-  margin-top: 8px;
+.TypingEffect {
+  color: #bbbfca;
+  font-size: 2vw;
+  margin-top: 0px;
 }
 
-.TypingEffect {
-  color: #BBBFCA;
-  font-size: 25px;
-  margin-top: 0px;
+@media only screen and (min-width: 768px) {
+  .BackgroundContainer {
+    width: 100vw;
+  }
+
+  .BackgroundContainer > h1 {
+    text-align: center;
+    font-size: 10vh;
+  }
+
+  .BackgroundContainer > h3 {
+    text-align: center;
+    font-size: 3vh;
+  }
+
+  .TypingEffect {
+    font-size: 2vw;
+  }
 }

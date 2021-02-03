@@ -118,6 +118,7 @@
 @media only screen and (min-width: 1200px) {
     .ContentContainer {
         width: 84%;
+        overflow-x: hidden;
     }
 }
 
