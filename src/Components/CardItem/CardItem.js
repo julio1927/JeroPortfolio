@@ -15,6 +15,7 @@ function CardItem(props) {
             />
             <div className={classes.CardsItemInfo}>
               <h5 className={classes.CardsItemText}>{props.title}</h5>
+              <p className={classes.ProjDesc}>This is a test msg</p>
             </div>
           </figure>
         </a>
