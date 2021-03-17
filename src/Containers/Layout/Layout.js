@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Aux from "../../hoc/Aux/Aux";
+import ReactAux from "../../hoc/ReactAux/ReactAux";
 import classes from "./Layout.module.css";
 import NavigationBar from "../../Components/Navigation/NavigationBar/NavigationBar";
 import Footer from "../../Components/Navigation/Footer/Footer";
@@ -7,7 +7,7 @@ import Footer from "../../Components/Navigation/Footer/Footer";
 class Layout extends Component {
   render() {
     return (
-      <Aux>
+      <ReactAux>
         {/* NavBar */}
         <NavigationBar />
 
@@ -17,7 +17,7 @@ class Layout extends Component {
         {/* Footer */}
         <Footer />
         
-      </Aux>
+      </ReactAux>
     );
   }
 }

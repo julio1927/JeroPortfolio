@@ -1,14 +1,14 @@
 import React from "react";
 import Layout from "./Containers/Layout/Layout";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Aux from "./hoc/Aux/Aux";
+import ReactAux from "./hoc/ReactAux/ReactAux";
 
 //Pages
 import HomePage from "./Components/Pages/HomePage/HomePage";
 
 function App() {
   return (
-    <Aux>
+    <ReactAux>
       <Layout>
         <Router>
           <Switch>
@@ -16,7 +16,7 @@ function App() {
           </Switch>
         </Router>
       </Layout>
-    </Aux>
+    </ReactAux>
   );
 }
 
