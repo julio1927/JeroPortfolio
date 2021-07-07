@@ -1,11 +1,11 @@
 import React from "react";
-import Cards from '../../Cards/Cards';
+import Projects from "../../ProjectCard/Projects";
 
 function ProjectsPage() {
 
   return (
     <div id="ProjectsPage">
-        <Cards />
+        <Projects />
     </div>
   );
 }
