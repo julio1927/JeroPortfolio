@@ -22,9 +22,14 @@
   margin-bottom: -5px;
 }
 
+.ProfileImg {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 .TypingEffect {
   color: #bbbfca;
-  font-size: 2vw;
+  font-size: 3vw;
   margin-top: 0px;
 }
 

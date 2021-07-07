@@ -1,30 +1,16 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Image from 'react-bootstrap/Image';
 import classes from "../../UI/Card/Card.module.css";
-import ProfilePic from '../../../Assets/Images/profilePic.jpeg';
 import './AboutPage.module.css';
 
 function AboutPage() {
-  const skills = [
-    "Javascript (ES6+)",
-    "HTML & CSS",
-    "React JS",
-    "Node JS",
-    "Shopify",
-    "Firebase",
-    "Wix",
-  ];
 
   return (
     <div id="AboutPage">
       <Card className={classes.Card}>
         <Card.Body>
-          <div className={classes.CardImg}>
-            <Image src={ProfilePic} alt="Julio Rivas"  roundedCircle/>
-          </div>
-          <Card.Title className="text-center">About Me</Card.Title>
-          <Card.Text>
+          <Card.Title className="text-center" style={{color: '#6c757d'}}>About Me</Card.Title>
+          <Card.Text className={classes.Text}>
             <div>
               <p>
                 Hello! I'm Julio, a software developer based in Kitchener, ON
@@ -41,18 +27,11 @@ function AboutPage() {
                 <a href="https://www.conestogac.on.ca">Conestoga College</a>,
                 where I was introduced to various technologies, concepts and
                 methods. I also had the opportunity to work on various semester
-                long projects with other software developers.
-              </p>
-
-              <p>
-                Here are a few technologies I've been working with recently:
+                long projects with other software developers. I used my knowledge 
+                from school and also worked on some freelancing projects. 
               </p>
             </div>
 
-            {/* Skills List */}
-            <ul>
-              {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
-            </ul>
           </Card.Text>
         </Card.Body>
       </Card>
