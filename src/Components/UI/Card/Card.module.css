@@ -11,6 +11,11 @@
   color: #7c7c7c;
 }
 
+.Title {
+  font-size: 2rem;
+  text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
   .Card {
     width: 50%;

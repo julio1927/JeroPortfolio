@@ -23,7 +23,9 @@ const CardItem = (props) => {
         {projects.map((p, i) => {
           return (
             <BlogCard key={i}>
-              <Img src={p.image} />
+              {p.image === "" ? null : (
+                  <Img src={p.image} />
+                )}
               <TitleContent>
                 <HeaderThree title>{p.title}</HeaderThree>
                 <Hr />

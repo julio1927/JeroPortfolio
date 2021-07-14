@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import classes from "../../UI/Card/Card.module.css";
-import './AboutPage.module.css';
 
 function AboutPage() {
 
@@ -9,7 +8,7 @@ function AboutPage() {
     <div id="AboutPage">
       <Card className={classes.Card}>
         <Card.Body>
-          <Card.Title className="text-center" style={{color: '#6c757d'}}>About Me</Card.Title>
+          <Card.Title className={classes.Title} style={{color: '#222831'}} as="h1">About Me</Card.Title>
           <Card.Text className={classes.Text}>
             <div>
               <p>
@@ -18,8 +17,7 @@ function AboutPage() {
               </p>
               <p>
                 I strive to create clean and efficient code, with a good user
-                experience, which in turn helps me develop exceptional websites
-                and web apps.
+                experience, which in turn helps me develop exceptional applications.
               </p>
 
               <p>
