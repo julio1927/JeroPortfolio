@@ -6,6 +6,7 @@ const FooterContainer = styled.footer`
   .footer {
     background: #222831;
     padding: 30px;
+    text-align: center;
   }
 
   .footerLink {
@@ -15,7 +16,8 @@ const FooterContainer = styled.footer`
 
   .footer .footer_menu {
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    align-items: center;
     justify-content: space-between;
   }
 
@@ -110,7 +112,13 @@ function Footer() {
                 <Link to="AboutPage" smooth={true} duration={1000}>About Me</Link>
               </div>
               <div className="footerLink">
+                <Link to="ProjectsPage" smooth={true} duration={1000}>Projects</Link>
+              </div>
+              <div className="footerLink">
                 <Link to="ResumePage" smooth={true} duration={1000}>Resume</Link>
+              </div>
+              <div className="footerLink">
+                <Link to="ContactPage" smooth={true} duration={1000}>Contact</Link>
               </div>
             </ul>
           </div>
