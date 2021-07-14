@@ -1,56 +1,56 @@
 import React from "react";
+import ReactAux from "../../hoc/ReactAux/ReactAux";
 
 import {
-  CardContainer,
-  CardWrapper,
-  Card,
-  CardLink,
-  CardIcon,
-  CardH1,
-  CardH2,
-  CardDescription,
-  ViewSourceBtn,
-  DemoBtn,
-} from "../ProjectCard/CardElements";
+  BlogCard,
+  CardInfo,
+  ExternalLinks,
+  GridContainer,
+  HeaderThree,
+  Hr,
+  Tag,
+  TagList,
+  TitleContent,
+  UtilityList,
+  Img,
+} from "../ProjectCard/ProjectElements/ProjectElements";
+import { projects } from "../Constants/Constants";
 
 const CardItem = (props) => {
   return (
-    <>
-      <CardContainer>
-        <CardH1>{props.title}</CardH1>
-        <CardWrapper>
-          <Card>
-            <CardLink href={props.href} target="_blank" rel="noreferrer" >
-              <CardIcon src={props.src} />
-              <CardH2>{props.label}</CardH2>
-              <CardDescription>{props.Description}</CardDescription>
-            </CardLink>
-          </Card>
-          <ViewSourceBtn>Source Code</ViewSourceBtn>
-          <DemoBtn>Demo</DemoBtn>
-        </CardWrapper>
-      </CardContainer>
-      {/* <li className={classes.CardsItem}>
-        <a
-          href={props.href}
-          className={classes.CardsItemAnchor}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <figure className={classes.CardsItemPic} data-category={props.label}>
-            <img
-              src={props.src}
-              alt={props.alt}
-              className={classes.CardsItemImg}
-            />
-            <div className={classes.CardsItemInfo}>
-              <h5 className={classes.CardsItemText}>{props.title}</h5>
-              <p className={classes.ProjDesc}>This is a test msg</p>
-            </div>
-          </figure>
-        </a>
-  </li>*/}
-    </>
+    <ReactAux>
+      <GridContainer>
+        {projects.map((p, i) => {
+          return (
+            <BlogCard key={i}>
+              <Img src={p.image} />
+              <TitleContent>
+                <HeaderThree title>{p.title}</HeaderThree>
+                <Hr />
+              </TitleContent>
+              <CardInfo className="card-info">{p.description}</CardInfo>
+              <div>
+                <TitleContent>Stack</TitleContent>
+                <TagList>
+                  {p.tags.map((t, i) => {
+                    return <Tag key={i}>{t}</Tag>;
+                  })}
+                </TagList>
+              </div>
+              <UtilityList>
+                {p.visit === "" ? null : (
+                  <ExternalLinks href={p.visit}>Demo</ExternalLinks>
+                )}
+
+                {p.source === "" ? null : (
+                  <ExternalLinks href={p.source}>Source</ExternalLinks>
+                )}
+              </UtilityList>
+            </BlogCard>
+          );
+        })}
+      </GridContainer>
+    </ReactAux>
   );
 };
 

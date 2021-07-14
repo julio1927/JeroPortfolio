@@ -27,8 +27,8 @@ function AboutPage() {
                 <a href="https://www.conestogac.on.ca">Conestoga College</a>,
                 where I was introduced to various technologies, concepts and
                 methods. I also had the opportunity to work on various semester
-                long projects with other software developers. I used my knowledge 
-                from school and also worked on some freelancing projects. 
+                long projects with other software developers. I applied the knowledge 
+                I learnt from school and also worked on some freelancing projects. 
               </p>
             </div>
 

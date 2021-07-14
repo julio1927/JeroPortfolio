@@ -6,7 +6,3 @@ ul {
     column-count: 2;
     column-gap: 5px;
 }
-
-li {
-    list-style-image: url('../../../Assets/Images/arrow-circle-right-solid.svg');
-}
