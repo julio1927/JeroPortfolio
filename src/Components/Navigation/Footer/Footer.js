@@ -139,7 +139,7 @@ function Footer() {
               <div>
                 <a
                   className="linkedin"
-                  href="https://www.youtube.com/c/ICMKitchener"
+                  href="linkedin.com/in/julio-rivas"
                   rel="noreferrer"
                   target="_blank"
                 >
