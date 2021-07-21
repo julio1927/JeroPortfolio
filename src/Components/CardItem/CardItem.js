@@ -41,11 +41,11 @@ const CardItem = (props) => {
               </div>
               <UtilityList>
                 {p.visit === "" ? null : (
-                  <ExternalLinks href={p.visit}>Demo</ExternalLinks>
+                  <ExternalLinks href={p.visit} target="_blank" rel="noopener noreferrer">Demo</ExternalLinks>
                 )}
 
                 {p.source === "" ? null : (
-                  <ExternalLinks href={p.source}>Source</ExternalLinks>
+                  <ExternalLinks href={p.source} target="_blank" rel="noopener noreferrer">Source</ExternalLinks>
                 )}
               </UtilityList>
             </BlogCard>
