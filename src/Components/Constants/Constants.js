@@ -30,7 +30,7 @@ export const projects = [
     image: Optix,
     tags: ["React", "HTML", "CSS"],
     source: "https://github.com/julio1927/Optix",
-    visit: "https://google.com",
+    visit: "https://optixnetworksolutions.vercel.app",
     id: 2,
   },
   {
