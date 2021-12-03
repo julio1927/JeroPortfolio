@@ -8,6 +8,7 @@ const AboutMeCardItem = (props) => {
       <Card className={classes.Card}>
         <Card.Body>
           {/* Section Icon */}
+          <Card.Img variant="top" src={props.icon} />
           <Card.Title className={classes.Header} as="h1">
             {/* Section Title */}
             {props.Header}
