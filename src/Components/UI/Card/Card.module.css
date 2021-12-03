@@ -1,19 +1,23 @@
 .Card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 60%;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 30px;
+  
 }
 
 .Text {
   color: #7c7c7c;
 }
 
-.Title {
-  font-size: 2rem;
+.Header {
+  font-size: 1.5rem;
   text-align: center;
+  color: #222831;
+}
+
+.Subtitle {
+  text-align: center;
+  color: #3772FF;
 }
 
 @media only screen and (min-width: 768px) {
