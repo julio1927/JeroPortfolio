@@ -12,7 +12,7 @@ const AboutMeCard = () => {
         <AboutMeCardItem
           icon={DesignIcon}
           Header="Designer"
-          HeaderInfoText="I value simple content structure, clean design patterns, and thoughtful interactions"
+          HeaderInfoText="I value simple content structure, clean design patterns, and thoughtful interactions."
           Subjects="Things I enjoy designing:"
           SubjectText="UX, UI, Web, Apps, Logos"
           Tools="Design Tools"
@@ -21,19 +21,19 @@ const AboutMeCard = () => {
         <AboutMeCardItem
           icon={FullstackIcon}
           Header="Full-Stack Developer"
-          HeaderInfoText="I value simple content structure, clean design patterns, and thoughtful interactions"
-          Subjects="Things I enjoy designing:"
-          SubjectText="UX, UI, Web, Apps, Logos"
-          Tools="Design Tools"
-          ToolsText="Figma, Sketch, Abobe XD, Pen & paper"
+          HeaderInfoText="I like to code ideas from scratch, and enjoy bringing proof of concepts to life."
+          Subjects="Languages I speak:"
+          SubjectText="React.JS, HTML, CSS, Redux, Node.JS, Express"
+          Tools="Dev Tools"
+          ToolsText="VS Code, VS Studio, Bootstrap, Github"
         />
         <AboutMeCardItem
           icon={FreelanceIcon}
           Header="Freelance Developer"
           HeaderInfoText="I value simple content structure, clean design patterns, and thoughtful interactions"
-          Subjects="Things I enjoy designing:"
-          SubjectText="UX, UI, Web, Apps, Logos"
-          Tools="Design Tools"
+          Subjects="Experiences I draw from:"
+          SubjectText="UX/UI, Website design, Logo design"
+          Tools="Use Cases:"
           ToolsText="Figma, Sketch, Abobe XD, Pen & paper"
         />
       </AboutCardBoarder>
