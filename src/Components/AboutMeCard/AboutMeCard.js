@@ -34,7 +34,7 @@ const AboutMeCard = () => {
           Subjects="Experiences I draw from:"
           SubjectText="UX/UI, Website design, Logo design"
           Tools="Use Cases:"
-          ToolsText="Figma, Sketch, Abobe XD, Pen & paper"
+          ToolsText="Optix Website"
         />
       </AboutCardBoarder>
     </AboutCardContainer>
